@@ -1,0 +1,20 @@
+.btn-b-m-c {
+  background-color: transparent;
+}
+.btn-b-m-c:hover {
+  background-color: transparent;
+  color: aliceblue;
+}
+.basket-menu-wrapper {
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 20px;
+  padding: 0 20px 10px;
+}
+.basket-menu-title h3 {
+  padding: 10px 0;
+}
+.cover {
+  overflow-y: scroll;
+  height: 400px;
+}

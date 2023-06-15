@@ -1,0 +1,130 @@
+.oqtepa-container {
+  width: 90%;
+  padding-top: 100px;
+  margin: auto;
+}
+.oqtepa-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+.menu-bar {
+  position: sticky;
+  top: 100px;
+  height: 500px;
+  width: 100%;
+}
+
+.menu-bar li {
+  cursor: pointer;
+}
+.basket-bar {
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  height: 500px;
+}
+.border_radius {
+  border-radius: 20px;
+}
+.border_radius h3 {
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+.back-to-main {
+  background-color: white;
+  cursor: pointer;
+}
+.menu-bar li {
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.menu-bar li:hover {
+  transition: 100ms ease-in-out;
+  background-color: white;
+}
+.menu-bar li.active {
+  transition: 100ms ease-in-out;
+  background-color: white;
+}
+
+.bg-theme-restaraunt {
+  background-image: url("../../images/oqtepa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 360px;
+  width: 100%;
+  border-radius: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 30px 30px;
+  margin-bottom: 50px;
+}
+.bg-feedup {
+  background-image: url("https://eda.yandex/images/3521394/9f6ab37ebbf38fabc569dca034392bc4-450x300.jpg");
+  background-position: center;
+}
+.bg-wok {
+  background-image: url("https://eda.yandex/images/3472725/7c47b21a0cd98a3fe2106df354864a93-1100x825.jpg");
+  background-position: center;
+}
+.bg-yapon {
+  background-image: url("https://eda.yandex/images/3682162/59c6d09b27fdcf982ef185fd128223fd-1100x825.jpg");
+  background-position: center;
+}
+.bg-black {
+  background-image: url("https://eda.yandex/images/2794391/339f8776d5c145b6045bcd39b9dc4e0a-1100x825.jpg");
+  background-position: center;
+}
+.bg-mahalla {
+  background-image: url("https://eda.yandex/images/3749380/f3f77485242a87d4900deb4044010aaa-1100x825.jpg");
+  background-position: center;
+}
+.bg-midori {
+  background-image: url("https://eda.yandex/images/3724421/13d85f9cf8a4647b425ad0a4e5f1bacd-1100x825.jpg");
+  background-position: center;
+}
+.bg-street77 {
+  background-image: url("https://eda.yandex/images/3547279/2290a36f37206193d2474b76ad22b7d8-1100x825.jpg");
+  background-position: center;
+}
+.info-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+.info-wrapper div {
+  padding: 5px 10px;
+  background-color: rgb(225, 225, 225);
+  color: black;
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .oqtepa-grid {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .basket-bar {
+    display: none;
+  }
+}
+@media screen and (max-width: 550px) {
+  .oqtepa-grid {
+    grid-template-columns: 1fr;
+  }
+  .menu-bar {
+    display: none;
+  }
+  .basket-bar {
+    display: none;
+  }
+}

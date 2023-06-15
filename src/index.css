@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  outline: none;
+}
+body {
+  background-color: #f5f4f2;
+}
+a {
+  color: rgb(42, 42, 42);
+}
+.yandex-title {
+  font-weight: bold;
+  /* width: 157px; */
+  /* background-image: url("https://avatars.mds.yandex.net/get-bunker/994123/62e784df90b806d5d740ef444a393b528f3226bc/svg"); */
+}
+.header {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0px 0px 80px -10px rgba(128, 128, 128, 0.418);
+  z-index: 2222;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+.header-logo p {
+  margin-left: 5px;
+}
+.header input {
+  padding: 5px 10px;
+  border: 0;
+  border-bottom: 1px solid gold;
+  max-width: 500px;
+  text-align: center;
+}
+
+.btn-login {
+  width: 80px;
+  height: 30px;
+  border: 0;
+  background-color: gold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-login:hover {
+  background-color: gold;
+}
+.apps {
+  display: flex;
+}
+.apps a {
+  border: 1px solid gainsboro;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  gap: 10px;
+}
+.footer {
+  width: 100%;
+  /* position: fixed; */
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 15px;
+  /* z-index: 2; */
+  background-color: white;
+}
+.footer ul {
+  display: flex;
+}
+.footer li {
+  padding: 5px;
+}
+
+.loginPage {
+  background-color: rgba(128, 128, 128, 0.41);
+  z-index: 3333;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login-content {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  height: 60%;
+}
+.form input {
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid gray;
+}
+.form button {
+  margin: auto;
+  width: 100%;
+}
+.basket {
+  margin-right: 5px;
+  border: 1px solid gold;
+  background-color: transparent;
+}
+.basketPage {
+  background-color: rgba(128, 128, 128, 0.41);
+  z-index: 3333;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.basket-content {
+  padding: 10px;
+  width: 500px;
+  min-height: 300px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.totalPrice {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.btn-confirm {
+  width: 100px;
+  padding: 10px 0;
+  height: 38px;
+  margin-left: 5px;
+}
+.cover {
+  margin-top: 30px;
+}
+.basket-title {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 10px 0;
+  align-items: center;
+}
+.basket-items div {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+}
+.basket-items button {
+  background-color: #fff;
+  border: 1px solid gold;
+}
+.main {
+  /* width: 80%; */
+  padding: 10px;
+  margin: auto;
+}
+@media screen and (max-width: 6000px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .login-content {
+    max-width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+  }
+  .header-logo p {
+    display: none;
+  }
+  .btns-header {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+  }
+}
+.star {
+  width: 10px !important;
+  height: 10px !important;
+}
+@media screen and (max-width: 450px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .login-content {
+    max-width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+  }
+  .header-logo p {
+    display: none;
+  }
+  .btns-header {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+  }
+  .footer ul {
+    flex-direction: column;
+  }
+}
+
+.product {
+  border-radius: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu-product,
+.menu-product div {
+  background-color: white;
+  padding: 10px;
+}
+.product img {
+  background-color: gold;
+  background-position: center;
+  width: 100%;
+  height: 205px;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+.product img:hover {
+  opacity: 1;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 100ms all;
+}
+.main-container {
+  padding: 0;
+}
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.btn-basket-cancel {
+  width: 30px;
+  height: 30px;
+}
+
+.error {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
